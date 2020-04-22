@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/welcome"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="140dp"
+        android:src="@drawable/applogo"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="120dp"
+        >
+    </ImageView>
+
+    <com.rey.material.widget.ProgressView
+        android:id="@+id/welcome_progressbar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:pv_autostart="true"
+        app:pv_circular="true"
+        app:pv_progressStyle="@style/Material.Drawable.CircularProgress"
+        app:pv_progressMode="indeterminate"
+        android:layout_marginBottom="160dp"/>
+
+    <Button
+        android:id="@+id/welcome_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Register"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/input"
+        ></Button>
+
+    <Button
+        android:id="@+id/welcome_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/button"
+        android:textAllCaps="false"
+        android:text="Already have an Account? Login"></Button>
+
+
+</LinearLayout>
