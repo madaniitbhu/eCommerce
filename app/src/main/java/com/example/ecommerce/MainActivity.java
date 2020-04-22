@@ -91,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                         else
                         {
+                            circularProgress.setVisibility(View.INVISIBLE);
                             Toast.makeText(MainActivity.this, "Incorrect Password..Try again", Toast.LENGTH_SHORT).show();
                         }
                     }
